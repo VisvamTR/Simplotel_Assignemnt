@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    background-color: #ff7171;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bolder;
+}
+nav ul li a img{
+    height: 30px;
+    vertical-align: middle;
+}
+.dropdown_menu_list{
+    display: none;
+}
+#contents_pg_1{
+    display: flex;
+    height: 635px;
+}
+.left_content{
+    padding: 80px 90px;
+    background: linear-gradient(to right, #fff6ad, #ffd1d2);
+    display: flex;
+    align-items: center;
+}
+.sub_left_content{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.left_content h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+.left_content P{
+    font-family: sans-serif;
+    line-height: 25px;
+    font-size: 19px;
+}
+.left_content button{
+    background-color: #ff7171;
+    color: white;
+    padding: 20px;
+    border: none;
+    width: 250px;
+}
+.right_content img{
+    height: 635px;
+    width: 765px;
+}
+
+/* page 2 of pdf starts from here */
+
+#content_pg_2{
+    background: linear-gradient(to right, #ffefb5, #ffacf7);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    height: 690px;
+    padding-left: 10%;
+}
+#content_pg_2 .flex-1 img{
+    height: 240px;
+    width: 270px;
+}
+#content_pg_2 .flex-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#content_pg_2 .flex-2 img{
+    height: 485px;
+    width: 270px;
+}
+#content_pg_2 .flex-3{
+    margin-left: 2%;
+}
+.sub_flex-3{
+    background-color: #ff7171;
+    font-family: sans-serif;
+    padding: 30px 40px;
+}
+.sub_flex-3 h1{
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.sub_flex-3 .inline, .inline_img{
+    display: inline;
+}
+.sub_flex-3 .inline_img{
+    vertical-align: middle;
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+    *{
+        font-size: 13px;
+    }
+    .right_content img{
+        height: 707px;
+        width: 549px;
+    }
+    .left_content{
+        padding: 92px 75px;
+        height: 707px;
+    }
+    .left_content h1{
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    .left_content P{
+        font-size: 15px;
+    }
+    .left_content button{
+        padding: 18px;
+        width: 175px;
+    }
+    #content_pg_2{
+        gap: 17px;
+        height: 768px;
+        padding-left: 4%;
+        margin-top: 7%;
+    }
+    #content_pg_2 .flex-1 img{
+        height: 190px;
+        width: 242px;
+    }
+    #content_pg_2 .flex-2 img{
+        height: 387px;
+        width: 243px;
+    }
+    .sub_flex-3{
+        padding: 9px;
+    }
+    .sub_flex-3 h1{
+        letter-spacing: 3px;
+        font-size: 53px;
+    }
+}
+/* Media query for tablets */
+@media (min-width: 600px) and (max-width: 900px) {
+    nav ul li a{
+        font-size: 13px;
+    }
+    #contents_pg_1{
+        height: 800px;
+        flex-direction: column;
+    }
+    .left_content{
+        padding: 30px 90px;
+    }
+    .right_content img{
+        margin-top: 50px;
+        height: 400px;
+        width: 750px;
+    }
+    .right_content{
+        background: linear-gradient(to right, #fff6ad, #ffd1d2);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+    #content_pg_2{
+        height: 900px;
+        padding-left: 13%;
+        margin-top: 15%;
+        padding-top: 6%;
+    }
+    .sub_flex-3{
+        margin-top: -8%;
+    }
+}
+
+/* Media query for 4K resolution laptops */
+@media (min-width: 1920px) and (min-height: 1080px) and (min-resolution: 2dppx) {
+    nav ul li{
+        margin: 10px 70px;
+    }
+    #contents_pg_1{
+        height: 800px;
+    }
+    .right_content img{
+        height: 800px;
+        width: 1200px;
+    }
+    #content_pg_2{
+        justify-content: center;
+        gap: 50px;
+        height: 800px;
+    }
+    #content_pg_2 .flex-1 img{
+        height: 300px;
+        width: 310px;
+    }
+    #content_pg_2 .flex-1{
+        gap: 30px;
+    }
+    #content_pg_2 .flex-2 img{
+        height: 620px;
+        width: 350px;
+    }
+    .sub_flex-3{
+        padding: 80px 110px;
+    }
+}
+/* Media query for mobile devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    .mob_res{
+        display: none;
+    }
+    .mob_view{
+        display: block;
+    }
+    #contents_pg_1{
+        height: 800px;
+        flex-direction: column;
+    }
+    .left_content{
+        padding: 30px 40px;
+    }
+    .left_content h1{
+        font-size: 25px;
+    }
+    .right_content img{
+        height: 300px;
+        width: 300px;
+    }
+    .right_content{
+        background: linear-gradient(to right, #fff6ad, #ffd1d2);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+
+    #content_pg_2{
+        flex-direction: column;
+        gap: 30px;
+        height: 1250px;
+        margin-top: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #content_pg_2 .flex-1{
+        gap: 20px;
+    }
+    #content_pg_2 .flex-2 img{
+        height: 400px;
+    }
+    .sub_flex-3{
+        padding: 15px 25px;
+    }
+    .sub_flex-3 h1{
+        letter-spacing: 5px;
+        font-size: 22px;
+    }
+    .sub_flex-3 .inline, .inline_img{
+        display: inline;
+    }
+    .sub_flex-3 .inline_img{
+        vertical-align: middle;
+    }
+
+
+
+
+    .dropdown_menu_list {
+        position: absolute;
+        top: 100%;
+        background-color: white;
+    }
+    .view_dropdown:hover .dropdown_menu_list {
+        display: block;
+    }
+    .dropdown_menu_list li {
+        padding: 10px;
+    }
+    .dropdown_menu_list li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    .menu_icon {
+        width: 24px;
+        height: 24px;
+    }
+    #navbar {
+        position: relative;
+    }
+}
+  
